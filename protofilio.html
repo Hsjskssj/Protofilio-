@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - M. Fajar Ramadhani</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Hero Section */
+        .portfolio-header {
+            background: linear-gradient(120deg, #0d6efd, #6c757d);
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .portfolio-header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            animation: fadeInDown 1.5s ease-out;
+        }
+
+        .portfolio-header p {
+            font-size: 1.2rem;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        /* Portfolio Section */
+        .portfolio-section {
+            padding: 50px 0;
+        }
+
+        .portfolio-item {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .portfolio-item .content {
+            padding: 15px;
+            background: #fff;
+        }
+
+        .portfolio-item h5 {
+            font-weight: bold;
+        }
+
+        .portfolio-item p {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: #adb5bd;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #0d6efd;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Fajar's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="portfolio-header">
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <p>A showcase of my projects and achievements</p>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Portfolio Item 1 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="images/project1.jpg" alt="Project 1">
+                        <div class="content">
+                            <h5>Web Development Project</h5>
+                            <p>Designed and developed a modern e-commerce platform with seamless UX.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="images/project2.jpg" alt="Project 2">
+                        <div class="content">
+                            <h5>VR Game Development</h5>
+                            <p>Created an immersive VR game with unique quests and storylines.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="images/project3.jpg" alt="Project 3">
+                        <div class="content">
+                            <h5>Responsive Web Design</h5>
+                            <p>Developed responsive websites optimized for mobile and desktop devices.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="images/project4.jpg" alt="Project 4">
+                        <div class="content">
+                            <h5>Interactive Dashboard</h5>
+                            <p>Built an interactive data dashboard for business insights and analytics.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="images/project5.jpg" alt="Project 5">
+                        <div class="content">
+                            <h5>Mobile Application</h5>
+                            <p>Developed a mobile app with intuitive navigation and seamless functionality.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="col-md-4">
+                    <div class="portfolio-item">
+                        <img src="images/project6.jpg" alt="Project 6">
+                        <div class="content">
+                            <h5>Game Design</h5>
+                            <p>Created a unique game world with captivating visuals and gameplay.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 M. Fajar Ramadhani. All rights reserved.</p>
+            <p>Follow me on:
+                <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
