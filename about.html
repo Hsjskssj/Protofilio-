@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - M. Fajar Ramadhani</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Section styles */
+        .skill-section {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Skill card styles */
+        .skill-card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill-card-icon {
+            font-size: 2.5rem;
+            color: #0d6efd;
+        }
+
+        .progress-container {
+            width: 100%;
+        }
+
+        .progress-bar {
+            background-color: #0d6efd;
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 768px) {
+            .skill-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .skill-card-icon {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Fajar's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="container py-5">
+        <h1 class="text-center mb-4">About Me</h1>
+        <p class="text-center">
+            Hello! I am <strong>M. Fajar Ramadhani</strong>, a passionate web developer and aspiring game designer.
+            I love learning new technologies and creating modern web applications.
+        </p>
+
+        <!-- Skills Section -->
+        <div class="skill-section mt-5">
+            <h2 class="mb-4 text-center">Professional Skills</h2>
+            <div class="skill-card">
+                <i class="skill-card-icon bi bi-code-slash"></i>
+                <div class="progress-container">
+                    <div class="d-flex justify-content-between">
+                        <span>HTML & CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="skill-card-icon bi bi-file-code"></i>
+                <div class="progress-container">
+                    <div class="d-flex justify-content-between">
+                        <span>JavaScript</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="skill-card-icon bi bi-layout-text-sidebar"></i>
+                <div class="progress-container">
+                    <div class="d-flex justify-content-between">
+                        <span>Bootstrap</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="skill-card-icon bi bi-code"></i>
+                <div class="progress-container">
+                    <div class="d-flex justify-content-between">
+                        <span>C#</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <i class="skill-card-icon bi bi-controller"></i>
+                <div class="progress-container">
+                    <div class="d-flex justify-content-between">
+                        <span>Game Development</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
